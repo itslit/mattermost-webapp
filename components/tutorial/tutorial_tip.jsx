@@ -30,8 +30,8 @@ export default class TutorialTip extends React.Component {
         this.state = {currentScreen: 0, show: false};
     }
     toggle() {
-        const show = !this.state.show;
-        this.setState({show});
+        //const show = !this.state.show;
+        //this.setState({show});
 
         if (!show && this.state.currentScreen >= this.props.screens.length - 1) {
             const step = PreferenceStore.getInt(Preferences.TUTORIAL_STEP, UserStore.getCurrentId(), 0);
