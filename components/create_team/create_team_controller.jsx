@@ -46,7 +46,7 @@ export default class CreateTeamController extends React.Component {
             description = (
                 <FormattedMessage
                     id='web.root.signup_info'
-                    defaultMessage='All team communication in one place, searchable and accessible anywhere'
+                    defaultMessage='Your community chat room in one place - searchable and accessible anywhere'
                 />
             );
         }
