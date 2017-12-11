@@ -32,7 +32,8 @@ export default class NotLoggedIn extends React.PureComponent {
         const content = [];
 
         if (this.props.config.HelpLink) {
-            content.push(
+            //This was implemented to remove the help footer
+            /*content.push(
                 <a
                     key='help_link'
                     id='help_link'
@@ -43,7 +44,7 @@ export default class NotLoggedIn extends React.PureComponent {
                 >
                     <FormattedMessage id='web.footer.help'/>
                 </a>
-            );
+            );*/
         }
 
         if (this.props.config.TermsOfServiceLink) {
@@ -77,7 +78,8 @@ export default class NotLoggedIn extends React.PureComponent {
         }
 
         if (this.props.config.AboutLink) {
-            content.push(
+            //This was implemented to remove the about footer
+            /*content.push(
                 <a
                     key='about_link'
                     id='about_link'
@@ -88,7 +90,7 @@ export default class NotLoggedIn extends React.PureComponent {
                 >
                     <FormattedMessage id='web.footer.about'/>
                 </a>
-            );
+            );*/
         }
 
         return (
