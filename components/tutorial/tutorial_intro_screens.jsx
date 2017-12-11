@@ -35,7 +35,8 @@ export default class TutorialIntroScreens extends React.Component {
         this.createCircles = this.createCircles.bind(this);
         this.skipTutorial = this.skipTutorial.bind(this);
 
-        this.state = {currentScreen: 0};
+        //This was implemented to turn off the tutorIal
+        this.state = {currentScreen: 3};
     }
     handleNext() {
         switch (this.state.currentScreen) {
