@@ -241,7 +241,7 @@ export default class SidebarRightMenu extends React.Component {
 
             if (moreTeams) {
                 joinAnotherTeamLink = (
-                    <li key='joinTeam_li'>
+                    /*<li key='joinTeam_li'>
                         <Link to='/select_team'>
                             <i className='icon fa fa-plus-square'/>
                             <FormattedMessage
@@ -249,7 +249,7 @@ export default class SidebarRightMenu extends React.Component {
                                 defaultMessage='Join Another Team'
                             />
                         </Link>
-                    </li>
+                    </li>*/
                 );
             }
 
@@ -286,7 +286,7 @@ export default class SidebarRightMenu extends React.Component {
         );
 
         const leaveTeam = (
-            <li key='leaveTeam_li'>
+            /*<li key='leaveTeam_li'>
                 <a
                     id='leaveTeam'
                     href='#'
@@ -301,7 +301,7 @@ export default class SidebarRightMenu extends React.Component {
                         defaultMessage='Leave Team'
                     />
                 </a>
-            </li>
+            </li>*/
         );
 
         if (isAdmin) {
@@ -365,7 +365,7 @@ export default class SidebarRightMenu extends React.Component {
         let helpLink = null;
         if (global.window.mm_config.HelpLink) {
             helpLink = (
-                <li>
+                /*<li>
                     <Link
                         target='_blank'
                         rel='noopener noreferrer'
@@ -377,14 +377,14 @@ export default class SidebarRightMenu extends React.Component {
                             defaultMessage='Help'
                         />
                     </Link>
-                </li>
+                </li>*/
             );
         }
 
         let reportLink = null;
         if (global.window.mm_config.ReportAProblemLink) {
             reportLink = (
-                <li>
+                /*<li>
                     <Link
                         target='_blank'
                         rel='noopener noreferrer'
@@ -396,7 +396,7 @@ export default class SidebarRightMenu extends React.Component {
                             defaultMessage='Report a Problem'
                         />
                     </Link>
-                </li>
+                </li>*/
             );
         }
 
@@ -410,7 +410,7 @@ export default class SidebarRightMenu extends React.Component {
         let nativeAppLink = null;
         if (global.window.mm_config.AppDownloadLink && !UserAgent.isMobileApp()) {
             nativeAppLink = (
-                <li>
+                /*<li>
                     <Link
                         target='_blank'
                         rel='noopener noreferrer'
@@ -422,7 +422,7 @@ export default class SidebarRightMenu extends React.Component {
                             defaultMessage='Download Apps'
                         />
                     </Link>
-                </li>
+                </li>*/
             );
         }
 
@@ -515,7 +515,7 @@ export default class SidebarRightMenu extends React.Component {
                         {helpLink}
                         {reportLink}
                         {nativeAppLink}
-                        <li>
+                        {/*<li>
                             <a
                                 href='#'
                                 onClick={this.handleAboutModal}
@@ -527,7 +527,7 @@ export default class SidebarRightMenu extends React.Component {
                                 />
                             </a>
                         </li>
-                        <li className='divider'/>
+                        <li className='divider'/>*/}
                         <li>
                             <a
                                 href='#'
