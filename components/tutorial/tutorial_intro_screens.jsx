@@ -36,7 +36,7 @@ export default class TutorialIntroScreens extends React.Component {
         this.skipTutorial = this.skipTutorial.bind(this);
 
         //This was implemented to turn off the tutorial
-        this.state = {currentScreen: 3};
+        this.state = {currentScreen: 9};
     }
     handleNext() {
         switch (this.state.currentScreen) {
