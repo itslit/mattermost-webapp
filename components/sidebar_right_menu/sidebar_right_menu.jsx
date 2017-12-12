@@ -285,7 +285,7 @@ export default class SidebarRightMenu extends React.Component {
             </li>
         );
 
-        /*const leaveTeam = (
+        const leaveTeam = (
             <li key='leaveTeam_li'>
                 <a
                     id='leaveTeam'
@@ -302,7 +302,7 @@ export default class SidebarRightMenu extends React.Component {
                     />
                 </a>
             </li>
-        );*/
+        );
 
         if (isAdmin) {
             teamSettingsLink = (
