@@ -399,9 +399,9 @@ export default class SidebarHeaderDropdown extends React.Component {
             }
         }
 
-        if (moreTeams) {
+        /*if (moreTeams) {
             teams.push(
-                /*<li key='joinTeam_li'>
+                <li key='joinTeam_li'>
                     <Link
                         id='joinAnotherTeam'
                         onClick={this.handleClick}
@@ -412,12 +412,12 @@ export default class SidebarHeaderDropdown extends React.Component {
                             defaultMessage='Join Another Team'
                         />
                     </Link>
-                </li>*/
+                </li>
             );
-        }
+        }*/
 
-        teams.push(
-            /*<li key='leaveTeam_li'>
+        /*teams.push(
+            <li key='leaveTeam_li'>
                 <button
                     className='style--none'
                     id='leaveTeam'
@@ -428,13 +428,13 @@ export default class SidebarHeaderDropdown extends React.Component {
                         defaultMessage='Leave Team'
                     />
                 </button>
-            </li>*/
-        );
+            </li>
+        );*/
 
         let helpLink = null;
-        if (config.HelpLink) {
+        /*if (config.HelpLink) {
             helpLink = (
-                /*<li>
+                <li>
                     <Link
                         id='helpLink'
                         target='_blank'
@@ -446,14 +446,14 @@ export default class SidebarHeaderDropdown extends React.Component {
                             defaultMessage='Help'
                         />
                     </Link>
-                </li>*/
+                </li>
             );
-        }
+        }*/
 
         let reportLink = null;
-        if (config.ReportAProblemLink) {
+        /*if (config.ReportAProblemLink) {
             reportLink = (
-                /*<li>
+                <li>
                     <Link
                         id='reportLink'
                         target='_blank'
@@ -465,14 +465,14 @@ export default class SidebarHeaderDropdown extends React.Component {
                             defaultMessage='Report a Problem'
                         />
                     </Link>
-                </li>*/
+                </li>
             );
-        }
+        }*/
 
         let nativeAppLink = null;
-        if (global.window.mm_config.AppDownloadLink && !UserAgent.isMobileApp()) {
+        /*if (global.window.mm_config.AppDownloadLink && !UserAgent.isMobileApp()) {
             nativeAppLink = (
-                /*<li>
+                <li>
                     <Link
                         id='nativeAppLink'
                         target='_blank'
@@ -484,9 +484,9 @@ export default class SidebarHeaderDropdown extends React.Component {
                             defaultMessage='Download Apps'
                         />
                     </Link>
-                </li>*/
+                </li>
             );
-        }
+        }*/
 
         let teamMembersModal;
         if (this.state.showTeamMembersModal) {
@@ -538,8 +538,8 @@ export default class SidebarHeaderDropdown extends React.Component {
             </li>
         );
 
-        const about = (
-            /*<li>
+        /*const about = (
+            <li>
                 <button
                     id='about'
                     className='style--none'
@@ -550,8 +550,8 @@ export default class SidebarHeaderDropdown extends React.Component {
                         defaultMessage='About Mattermost'
                     />
                 </button>
-            </li>*/
-        );
+            </li>
+        );*/
 
         const logout = (
             <li>
