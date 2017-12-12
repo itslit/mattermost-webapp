@@ -239,9 +239,9 @@ export default class SidebarRightMenu extends React.Component {
                 }
             }
 
-            if (moreTeams) {
+            /*if (moreTeams) {
                 joinAnotherTeamLink = (
-                    /*<li key='joinTeam_li'>
+                    <li key='joinTeam_li'>
                         <Link to='/select_team'>
                             <i className='icon fa fa-plus-square'/>
                             <FormattedMessage
@@ -249,9 +249,9 @@ export default class SidebarRightMenu extends React.Component {
                                 defaultMessage='Join Another Team'
                             />
                         </Link>
-                    </li>*/
+                    </li>
                 );
-            }
+            }*/
 
             if (global.window.mm_config.EnableTeamCreation === 'true' || isSystemAdmin) {
                 createTeam = (
@@ -285,8 +285,8 @@ export default class SidebarRightMenu extends React.Component {
             </li>
         );
 
-        const leaveTeam = (
-            /*<li key='leaveTeam_li'>
+        /*const leaveTeam = (
+            <li key='leaveTeam_li'>
                 <a
                     id='leaveTeam'
                     href='#'
@@ -301,8 +301,8 @@ export default class SidebarRightMenu extends React.Component {
                         defaultMessage='Leave Team'
                     />
                 </a>
-            </li>*/
-        );
+            </li>
+        );*/
 
         if (isAdmin) {
             teamSettingsLink = (
@@ -363,9 +363,9 @@ export default class SidebarRightMenu extends React.Component {
         }
 
         let helpLink = null;
-        if (global.window.mm_config.HelpLink) {
+        /*if (global.window.mm_config.HelpLink) {
             helpLink = (
-                /*<li>
+                <li>
                     <Link
                         target='_blank'
                         rel='noopener noreferrer'
@@ -377,9 +377,9 @@ export default class SidebarRightMenu extends React.Component {
                             defaultMessage='Help'
                         />
                     </Link>
-                </li>*/
+                </li>
             );
-        }
+        }*/
 
         let reportLink = null;
         if (global.window.mm_config.ReportAProblemLink) {
