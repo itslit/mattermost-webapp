@@ -382,9 +382,9 @@ export default class SidebarRightMenu extends React.Component {
         }*/
 
         let reportLink = null;
-        if (global.window.mm_config.ReportAProblemLink) {
+        /*if (global.window.mm_config.ReportAProblemLink) {
             reportLink = (
-                /*<li>
+                <li>
                     <Link
                         target='_blank'
                         rel='noopener noreferrer'
@@ -396,9 +396,9 @@ export default class SidebarRightMenu extends React.Component {
                             defaultMessage='Report a Problem'
                         />
                     </Link>
-                </li>*/
+                </li>
             );
-        }
+        }*/
 
         let tutorialTip = null;
         if (this.state.showTutorialTip) {
@@ -408,9 +408,9 @@ export default class SidebarRightMenu extends React.Component {
         }
 
         let nativeAppLink = null;
-        if (global.window.mm_config.AppDownloadLink && !UserAgent.isMobileApp()) {
+        /*if (global.window.mm_config.AppDownloadLink && !UserAgent.isMobileApp()) {
             nativeAppLink = (
-                /*<li>
+                <li>
                     <Link
                         target='_blank'
                         rel='noopener noreferrer'
@@ -422,9 +422,9 @@ export default class SidebarRightMenu extends React.Component {
                             defaultMessage='Download Apps'
                         />
                     </Link>
-                </li>*/
+                </li>
             );
-        }
+        }*/
 
         let addUsersToTeamModal;
         if (this.state.showAddUsersToTeamModal) {
