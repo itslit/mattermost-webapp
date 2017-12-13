@@ -28,10 +28,11 @@ export default class TutorialTip extends React.Component {
         this.skipTutorial = this.skipTutorial.bind(this);
         
         //The currentScreen was changed to bypass the tutorial
-        this.state = {currentScreen: 9, show: false};
+        this.state = {currentScreen: 0, show: false};
     }
     toggle() {
-        const show = !this.state.show;
+        //const show = !this.state.show;
+        const show = this.state.show;
         this.setState({show});
 
         if (!show && this.state.currentScreen >= this.props.screens.length - 1) {
