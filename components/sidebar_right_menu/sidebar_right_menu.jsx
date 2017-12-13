@@ -239,7 +239,7 @@ export default class SidebarRightMenu extends React.Component {
                 }
             }
 
-            /*if (moreTeams) {
+            if (moreTeams) {
                 joinAnotherTeamLink = (
                     <li key='joinTeam_li'>
                         <Link to='/select_team'>
@@ -251,7 +251,7 @@ export default class SidebarRightMenu extends React.Component {
                         </Link>
                     </li>
                 );
-            }*/
+            }
 
             if (global.window.mm_config.EnableTeamCreation === 'true' || isSystemAdmin) {
                 createTeam = (
@@ -363,7 +363,7 @@ export default class SidebarRightMenu extends React.Component {
         }
 
         let helpLink = null;
-        /*if (global.window.mm_config.HelpLink) {
+        if (global.window.mm_config.HelpLink) {
             helpLink = (
                 <li>
                     <Link
@@ -379,10 +379,10 @@ export default class SidebarRightMenu extends React.Component {
                     </Link>
                 </li>
             );
-        }*/
+        }
 
         let reportLink = null;
-        /*if (global.window.mm_config.ReportAProblemLink) {
+        if (global.window.mm_config.ReportAProblemLink) {
             reportLink = (
                 <li>
                     <Link
@@ -398,7 +398,7 @@ export default class SidebarRightMenu extends React.Component {
                     </Link>
                 </li>
             );
-        }*/
+        }
 
         let tutorialTip = null;
         if (this.state.showTutorialTip) {
@@ -408,7 +408,7 @@ export default class SidebarRightMenu extends React.Component {
         }
 
         let nativeAppLink = null;
-        /*if (global.window.mm_config.AppDownloadLink && !UserAgent.isMobileApp()) {
+        if (global.window.mm_config.AppDownloadLink && !UserAgent.isMobileApp()) {
             nativeAppLink = (
                 <li>
                     <Link
@@ -424,7 +424,7 @@ export default class SidebarRightMenu extends React.Component {
                     </Link>
                 </li>
             );
-        }*/
+        }
 
         let addUsersToTeamModal;
         if (this.state.showAddUsersToTeamModal) {
@@ -515,7 +515,7 @@ export default class SidebarRightMenu extends React.Component {
                         {helpLink}
                         {reportLink}
                         {nativeAppLink}
-                        {/*<li>
+                        <li>
                             <a
                                 href='#'
                                 onClick={this.handleAboutModal}
@@ -527,7 +527,7 @@ export default class SidebarRightMenu extends React.Component {
                                 />
                             </a>
                         </li>
-                        <li className='divider'/>*/}
+                        <li className='divider'/>
                         <li>
                             <a
                                 href='#'
