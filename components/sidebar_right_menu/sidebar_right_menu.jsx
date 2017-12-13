@@ -363,7 +363,7 @@ export default class SidebarRightMenu extends React.Component {
         }
 
         let helpLink = null;
-        if (global.window.mm_config.HelpLink) {
+        if (global.window.mm_config.HelpLink == 'false') {
             helpLink = (
                 <li>
                     <Link
@@ -382,7 +382,7 @@ export default class SidebarRightMenu extends React.Component {
         }
 
         let reportLink = null;
-        if (global.window.mm_config.ReportAProblemLink) {
+        if (global.window.mm_config.ReportAProblemLink == 'false') {
             reportLink = (
                 <li>
                     <Link
@@ -401,14 +401,14 @@ export default class SidebarRightMenu extends React.Component {
         }
 
         let tutorialTip = null;
-        if (this.state.showTutorialTip) {
+        if (this.state.showTutorialTip == 'false') {
             tutorialTip = createMenuTip((e) => e.preventDefault(), true);
             this.closeLeftSidebar();
             this.openRightSidebar();
         }
 
         let nativeAppLink = null;
-        if (global.window.mm_config.AppDownloadLink && !UserAgent.isMobileApp()) {
+        if (global.window.mm_config.AppDownloadLink == 'false' && !UserAgent.isMobileApp()) {
             nativeAppLink = (
                 <li>
                     <Link
@@ -515,7 +515,7 @@ export default class SidebarRightMenu extends React.Component {
                         {helpLink}
                         {reportLink}
                         {nativeAppLink}
-                        <li>
+                        {/*<li>
                             <a
                                 href='#'
                                 onClick={this.handleAboutModal}
@@ -527,7 +527,7 @@ export default class SidebarRightMenu extends React.Component {
                                 />
                             </a>
                         </li>
-                        <li className='divider'/>
+                        <li className='divider'/>*/}
                         <li>
                             <a
                                 href='#'
