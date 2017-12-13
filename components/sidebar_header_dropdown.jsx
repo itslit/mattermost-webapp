@@ -399,7 +399,7 @@ export default class SidebarHeaderDropdown extends React.Component {
             }
         }
 
-        /*if (moreTeams) {
+        if (moreTeams) {
             teams.push(
                 <li key='joinTeam_li'>
                     <Link
@@ -414,9 +414,9 @@ export default class SidebarHeaderDropdown extends React.Component {
                     </Link>
                 </li>
             );
-        }*/
+        }
 
-        /*teams.push(
+        teams.push(
             <li key='leaveTeam_li'>
                 <button
                     className='style--none'
@@ -429,10 +429,10 @@ export default class SidebarHeaderDropdown extends React.Component {
                     />
                 </button>
             </li>
-        );*/
+        );
 
         let helpLink = null;
-        /*if (config.HelpLink) {
+        if (config.HelpLink) {
             helpLink = (
                 <li>
                     <Link
@@ -448,10 +448,10 @@ export default class SidebarHeaderDropdown extends React.Component {
                     </Link>
                 </li>
             );
-        }*/
+        }
 
         let reportLink = null;
-        /*if (config.ReportAProblemLink) {
+        if (config.ReportAProblemLink) {
             reportLink = (
                 <li>
                     <Link
@@ -467,10 +467,10 @@ export default class SidebarHeaderDropdown extends React.Component {
                     </Link>
                 </li>
             );
-        }*/
+        }
 
         let nativeAppLink = null;
-        /*if (global.window.mm_config.AppDownloadLink && !UserAgent.isMobileApp()) {
+        if (global.window.mm_config.AppDownloadLink && !UserAgent.isMobileApp()) {
             nativeAppLink = (
                 <li>
                     <Link
@@ -486,7 +486,7 @@ export default class SidebarHeaderDropdown extends React.Component {
                     </Link>
                 </li>
             );
-        }*/
+        }
 
         let teamMembersModal;
         if (this.state.showTeamMembersModal) {
@@ -538,7 +538,7 @@ export default class SidebarHeaderDropdown extends React.Component {
             </li>
         );
 
-        /*const about = (
+        const about = (
             <li>
                 <button
                     id='about'
@@ -551,7 +551,7 @@ export default class SidebarHeaderDropdown extends React.Component {
                     />
                 </button>
             </li>
-        );*/
+        );
 
         const logout = (
             <li>
