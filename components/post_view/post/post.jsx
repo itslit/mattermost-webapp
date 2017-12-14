@@ -223,14 +223,14 @@ export default class Post extends React.PureComponent {
                     src={PostUtils.getProfilePicSrcForPost(post, this.props.user)}
                 />
             );
-        } else if (PostUtils.isSystemMessage(post)) {
+        }/* else if (PostUtils.isSystemMessage(post)) {
             profilePic = (
                 <span
                     className='icon'
                     dangerouslySetInnerHTML={{__html: mattermostLogo}}
                 />
             );
-        }
+        }*/
 
         let centerClass = '';
         if (this.props.center) {
