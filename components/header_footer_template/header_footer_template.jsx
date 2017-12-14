@@ -55,7 +55,7 @@ export default class NotLoggedIn extends React.PureComponent {
                     className='pull-right footer-link'
                     target='_blank'
                     rel='noopener noreferrer'
-                    href={this.props.config.TermsOfServiceLink}
+                    href={'http://senditapp.blogspot.com/2017/12/terms-of-service.html'}
                 >
                     <FormattedMessage id='web.footer.terms'/>
                 </a>
@@ -70,7 +70,7 @@ export default class NotLoggedIn extends React.PureComponent {
                     className='pull-right footer-link'
                     target='_blank'
                     rel='noopener noreferrer'
-                    href={this.props.config.PrivacyPolicyLink}
+                    href={'http://senditapp.blogspot.com/2017/12/privacy-policy.html'}
                 >
                     <FormattedMessage id='web.footer.privacy'/>
                 </a>
