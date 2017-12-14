@@ -197,7 +197,7 @@ export default class Post extends React.PureComponent {
 
     render() {
         const post = this.props.post || {};
-        const mattermostLogo = Constants.MATTERMOST_ICON_SVG;
+        //const mattermostLogo = Constants.MATTERMOST_ICON_SVG;
 
         const isSystemMessage = PostUtils.isSystemMessage(post);
         const fromWebhook = post && post.props && post.props.from_webhook === 'true';
