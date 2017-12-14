@@ -432,7 +432,7 @@ export default class SidebarHeaderDropdown extends React.Component {
         );
 
         let helpLink = null;
-        if (config.HelpLink) {
+        if (config.HelpLink == 'false') {
             helpLink = (
                 <li>
                     <Link
@@ -451,7 +451,7 @@ export default class SidebarHeaderDropdown extends React.Component {
         }
 
         let reportLink = null;
-        if (config.ReportAProblemLink) {
+        if (config.ReportAProblemLink == 'false') {
             reportLink = (
                 <li>
                     <Link
@@ -470,7 +470,7 @@ export default class SidebarHeaderDropdown extends React.Component {
         }
 
         let nativeAppLink = null;
-        if (global.window.mm_config.AppDownloadLink && !UserAgent.isMobileApp()) {
+        if (global.window.mm_config.AppDownloadLink == 'false' && !UserAgent.isMobileApp()) {
             nativeAppLink = (
                 <li>
                     <Link
@@ -547,7 +547,7 @@ export default class SidebarHeaderDropdown extends React.Component {
                 >
                     <FormattedMessage
                         id='navbar_dropdown.about'
-                        defaultMessage='About Mattermost'
+                        defaultMessage='About Send It'
                     />
                 </button>
             </li>
