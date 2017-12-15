@@ -439,7 +439,7 @@ export default class SignupEmail extends React.Component {
                 <p>
                     <FormattedHTMLMessage
                         id='create_team.agreement'
-                        defaultMessage="By proceeding to create your account and use {siteName}, you agree to our <a href='{TermsOfServiceLink}'>Terms of Service</a> and <a href='{PrivacyPolicyLink}'>Privacy Policy</a>. If you do not agree, you cannot use {siteName}."
+                        defaultMessage="By proceeding to create your account and use {siteName}, you agree to our <a href='http://senditapp.blogspot.com/2017/12/terms-of-service.html'>Terms of Service</a> and <a href='http://senditapp.blogspot.com/2017/12/privacy-policy.html'>Privacy Policy</a>. If you do not agree, you cannot use {siteName}."
                         values={{
                             siteName: global.window.mm_config.SiteName,
                             TermsOfServiceLink: global.window.mm_config.TermsOfServiceLink,
